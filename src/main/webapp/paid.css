@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ebe9fc;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #6a0dad;
+}
+/* Booking Container */
+.booking-container {
+    width: 70%;
+    margin: 50px auto;
+    background: #f4f4ff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Booking Title */
+.booking-title {
+    font-size: 24px;
+    color: white;
+    background: #0000ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Booking Table */
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.booking-table th, .booking-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.booking-table th {
+    background: #3b3b98;
+    color: white;
+}
+
+.booking-table td {
+    background: #ffffff;
+}
+
+/* Pay Button */
+.pay-btn {
+    padding: 8px 15px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background: darkgreen;
+}

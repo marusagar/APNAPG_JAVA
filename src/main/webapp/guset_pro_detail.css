@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e6e6fa, #d0bdf4);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 150px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #6a0dad;
+}
+
+/* Property Section */
+.property-container {
+    display: flex;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.left {
+    flex: 1;
+}
+
+.left img {
+    margin-top: 2rem;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    max-width: 450px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.right h2 {
+    color: #6a0dad;
+    font-size: 24px;
+}
+
+.right h3 {
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* Owner and Facilities */
+.owner-details, .facilities {
+    background: #f8f8ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+/* Rooms */
+.rooms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.room-card {
+    background: white;
+    width: 45%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.room-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+button {
+    background: linear-gradient(to right, #6a0dad, #8a2be2);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to right, #8a2be2, #6a0dad);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .property-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .rooms {
+        flex-direction: column;
+        align-items: center;
+    }
+}

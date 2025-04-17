@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f3f3f3; */
+    background: #F2F1FD;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: white;
+    border-bottom: 1px solid black;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 1); */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 150px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+
+.logout {
+    color: red;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%;
+    /* background: white; */
+    background: #F2F1FD;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10% auto;
+    text-align: center;
+}
+
+.form-container h2 {
+    background: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

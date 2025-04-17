@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.logo img {
+    height: 50px;
+    position: relative;
+    left:-1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 150px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+/* Form Container */
+.form-container {
+    /* height: 100vh;  */
+    margin: 5% auto;
+    
+    background: #F2F1FD;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px; /* Restrict max width for better design */
+}
+
+/* Center Form Card */
+.form-card {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+/* Form Groups */
+.form-group {
+    width: 100%; /* Full width for better alignment */
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/* File Input */
+.form-group input[type="file"] {
+    border: none;
+    background: #f8f8f8;
+}
+
+/* Buttons */
+.form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+.add-btn {
+    background: #3b3b98;
+    color: white;
+}
+
+.add-btn:hover {
+    background: #2d2d6a;
+}
+
+.cancel-btn {
+	width: 10rem;
+  height: 3rem;	
+    background: #e57373;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #c62828;
+}

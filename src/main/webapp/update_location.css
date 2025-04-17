@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #E5E5FF;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background:white;
+    border-bottom: 1px solid black;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 1); */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 120px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+/* Table Container */
+.table-container {
+    margin-top: 100px;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Header */
+.table-header {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #f5f5f5;
+}
+
+
+/* Container */
+.update-location-container {
+    width: 50%;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
